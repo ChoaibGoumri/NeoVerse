@@ -237,7 +237,7 @@ not only a place to access knowledge, but also a space that can **guide, support
 
 ## Team
 
-**TODO:VINCERE!**
 <p align="center">
-  <img src="Assets/MY%20ASSETS/logo_team.png" alt="TODO:VINCERE Logo" width="200"/>
+  <b>TODO:VINCERE!</b><br><br>
+  <img src="Assets/MY%20ASSETS/logo_team.png" width="180"/>
 </p>
