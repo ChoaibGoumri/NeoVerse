@@ -4,8 +4,6 @@ from typing import List
 
 class StartExamRequest(BaseModel):
     user_id: str
-    subject: str
-    language: str
 
 
 class StartExamResponse(BaseModel):

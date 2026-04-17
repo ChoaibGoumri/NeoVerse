@@ -6,8 +6,8 @@ class TTSService:
     def __init__(self):
         self.output_dir = settings.audio_out_dir
         os.makedirs(self.output_dir, exist_ok=True)
-        # Scegliamo una voce italiana neutra e di buona qualità di Edge TTS
-        self.voice = "it-IT-DiegoNeural" 
+        # Scegliamo una voce inglese neutra e di buona qualità di Edge TTS
+        self.voice = "en-US-ChristopherNeural" 
 
     def generate_audio(self, text: str, filename: str) -> str:
         """

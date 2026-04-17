@@ -24,28 +24,13 @@ def test_health():
         return False
 
 def test_start_exam_invalid_subject():
-    print("Test 2: Start Exam (Materia Invalida)")
-    payload = {
-        "user_id": "test_user_01",
-        "subject": "Storia",
-        "language": "it-IT"
-    }
-    try:
-        response = requests.post(f"{BASE_URL}/exam/start", json=payload)
-        print(f"Status Code: {response.status_code}")
-        print(f"Response: {response.json()}\n")
-        assert response.status_code == 422
-        return True
-    except Exception as e:
-        print(f"Errore: {e}\n")
-        return False
+    # Deprecated since subject is now hardcoded in the backend. Skipping.
+    return True
 
 def test_start_exam_valid():
     print("Test 3: Start Exam (Valido)")
     payload = {
-        "user_id": "test_user_01",
-        "subject": "Ingegneria del software",
-        "language": "it-IT"
+        "user_id": "test_user_01"
     }
     try:
         response = requests.post(f"{BASE_URL}/exam/start", json=payload)
@@ -69,9 +54,7 @@ def test_answer_audio(session_id):
     print("Test 4: Answer Audio (Valido)")
     data = {
         "user_id": "test_user_01",
-        "session_id": session_id,
-        "subject": "Ingegneria del software",
-        "language": "it-IT"
+        "session_id": session_id
     }
     try:
         with open(AUDIO_TEST_FILE, "rb") as f:
