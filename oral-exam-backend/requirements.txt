@@ -1,0 +1,7 @@
+fastapi
+uvicorn[standard]
+python-multipart
+pydantic-settings
+google-genai
+faster-whisper
+python-dotenv

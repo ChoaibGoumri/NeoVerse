@@ -1,0 +1,49 @@
+{
+  "session_id": "5860cf4c-ee42-4163-9c55-83841cdd3773",
+  "user_id": "test_user_01",
+  "subject": "Ingegneria del software",
+  "language": "it-IT",
+  "created_at": "2026-04-17T08:35:46.241207+00:00",
+  "status": "completed",
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "professor",
+      "text": "Ciao! Sono il tuo tutor virtuale per questa simulazione d'esame di Ingegneria del software. Sono qui per supportarti e aiutarti a praticare in vista dell'esame vero e proprio. Rispondi pure con calma e al tuo ritmo.\n\nIniziamo con la prima domanda: potresti spiegarmi quali sono le fasi principali del ciclo di vita del software e quali attività caratterizzano ciascuna di esse?",
+      "timestamp": "2026-04-17T08:35:46.241237+00:00"
+    },
+    {
+      "turn_number": 2,
+      "role": "student",
+      "text": "Un algoritmo gridi è un paradigma algoritmico che costruisce una soluzione pezzo per pezzo, scegliendo in ogni momento il pezzo che offre il beneficio più ovvio e immediato.",
+      "timestamp": "2026-04-17T08:35:49.838405+00:00",
+      "audio_file": "data/audio_in/5860cf4c-ee42-4163-9c55-83841cdd3773_test.aiff"
+    },
+    {
+      "turn_number": 3,
+      "role": "evaluation",
+      "scores": {
+        "clarity": 6,
+        "completeness": 0,
+        "confidence": 5
+      },
+      "feedback": {
+        "strengths": [
+          "Hai fornito una definizione chiara e concisa di un algoritmo greedy, dimostrando di conoscere questo concetto."
+        ],
+        "weaknesses": [
+          "La tua risposta non ha affrontato la domanda posta, che riguardava le fasi del ciclo di vita del software.",
+          "Sembra che tu abbia confuso l'argomento della domanda o forse hai interpretato male la richiesta iniziale."
+        ],
+        "overall": "Grazie per la tua risposta. È fondamentale prestare attenzione alla domanda specifica per assicurarsi di rispondere all'argomento corretto. Non preoccuparti, capita di fraintendere! Riprovo a riformulare per darti un'altra opportunità di dimostrare le tue conoscenze."
+      },
+      "timestamp": "2026-04-17T08:36:03.598527+00:00"
+    },
+    {
+      "turn_number": 4,
+      "role": "professor",
+      "text": "Capita, a volte si può fraintendere la domanda! Torniamo un attimo indietro. La mia domanda iniziale riguardava il *ciclo di vita del software*. Potresti spiegarmi quali sono le sue fasi principali e quali attività caratterizzano ciascuna di esse?",
+      "timestamp": "2026-04-17T08:36:03.598554+00:00"
+    }
+  ]
+}

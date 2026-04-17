@@ -1,0 +1,16 @@
+{
+  "session_id": "4fa3505a-957e-42dd-ae7b-6bc0267f522d",
+  "user_id": "test_user_01",
+  "subject": "Ingegneria del software",
+  "language": "it-IT",
+  "created_at": "2026-04-17T08:32:17.661680+00:00",
+  "status": "completed",
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "professor",
+      "text": "Ciao! Sono il tuo tutor virtuale per questa simulazione d'esame di Ingegneria del software. Sono qui per aiutarti a fare pratica e a migliorare, quindi prenditi il tuo tempo per rispondere con calma.\n\nPer iniziare, potresti parlarmi dei principali modelli di processo software? In particolare, potresti descrivere il modello a cascata (Waterfall) e quali sono i suoi punti di forza e di debolezza?",
+      "timestamp": "2026-04-17T08:32:17.661714+00:00"
+    }
+  ]
+}

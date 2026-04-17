@@ -1,0 +1,16 @@
+{
+  "session_id": "ae13a923-5417-4049-a9cb-c7fc55970e9d",
+  "user_id": "test_user_01",
+  "subject": "Ingegneria del software",
+  "language": "it-IT",
+  "created_at": "2026-04-17T08:48:06.356103+00:00",
+  "status": "completed",
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "professor",
+      "text": "Ciao, sono il tuo tutor virtuale per questa simulazione d'esame di Ingegneria del software. Sono qui per supportarti e aiutarti a fare pratica, quindi prenditi pure il tuo tempo per rispondere con calma.\n\nPer cominciare, potresti descrivere cos'è l'Ingegneria del software e quali sono i suoi obiettivi principali?",
+      "timestamp": "2026-04-17T08:48:06.356130+00:00"
+    }
+  ]
+}

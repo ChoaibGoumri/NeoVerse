@@ -1,0 +1,16 @@
+{
+  "session_id": "f4fefc66-5e41-43fe-9320-44a3dcf288aa",
+  "user_id": "test_user_01",
+  "subject": "Ingegneria del software",
+  "language": "it-IT",
+  "created_at": "2026-04-17T08:31:53.183507+00:00",
+  "status": "completed",
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "professor",
+      "text": "Ciao! Sono il tuo tutor virtuale per questa simulazione d'esame di Ingegneria del software. Sono qui per aiutarti a fare pratica e a migliorare, quindi sentiti libero di rispondere con calma e al tuo ritmo.\n\nIniziamo con la prima domanda: potresti descrivere il ciclo di vita del software a cascata (Waterfall Model) e quali sono i suoi principali vantaggi e svantaggi?",
+      "timestamp": "2026-04-17T08:31:53.183517+00:00"
+    }
+  ]
+}
