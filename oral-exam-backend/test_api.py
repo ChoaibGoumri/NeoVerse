@@ -102,7 +102,7 @@ def test_end_exam(session_id):
         "session_id": session_id
     }
     try:
-        response = requests.post(f"{BASE_URL}/exam/end", params=params, timeout=30)
+        response = requests.post(f"{BASE_URL}/exam/end", params=params, timeout=120)
         print(f"Status Code: {response.status_code}")
         print(f"Response: {json.dumps(response.json(), indent=2, ensure_ascii=False)}\n")
         assert response.status_code == 200

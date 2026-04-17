@@ -1,0 +1,50 @@
+{
+  "session_id": "dad235e0-98c5-43a3-99a1-355bc1f84618",
+  "user_id": "test_user_01",
+  "subject": "Ingegneria del software",
+  "language": "it-IT",
+  "created_at": "2026-04-17T10:52:15.568373+00:00",
+  "status": "completed",
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "professor",
+      "text": "Ciao! Sono il tuo tutor virtuale per questa simulazione d'esame di Ingegneria del Software. Sono qui per aiutarti a ripassare e a prendere confidenza con la materia: non preoccuparti, affrontiamo tutto con calma.\n\nIniziamo subito. Mi piacerebbe partire dai fondamentali: potresti spiegarmi brevemente che cos'è il modello a cascata (*Waterfall model*) e quali sono, secondo te, i suoi principali limiti in un contesto di sviluppo software moderno?",
+      "timestamp": "2026-04-17T10:52:15.568410+00:00"
+    },
+    {
+      "turn_number": 2,
+      "role": "student",
+      "text": "Un algoritmo gridi è un paradigma algoritmico che costruisce una soluzione pezzo per pezzo, scegliendo in ogni momento il pezzo che offre il beneficio più ovvio e immediato.",
+      "timestamp": "2026-04-17T10:52:20.302139+00:00",
+      "audio_file": "data/audio_in/dad235e0-98c5-43a3-99a1-355bc1f84618_test.aiff"
+    },
+    {
+      "turn_number": 3,
+      "role": "evaluation",
+      "scores": {
+        "clarity": 8,
+        "completeness": 0,
+        "confidence": 7
+      },
+      "feedback": {
+        "strengths": [
+          "Hai esposto la definizione di algoritmo greedy con chiarezza e precisione.",
+          "Il linguaggio utilizzato è corretto e fluido."
+        ],
+        "weaknesses": [
+          "La risposta è completamente fuori tema rispetto alla domanda posta.",
+          "È necessario prestare maggiore attenzione alla traccia della domanda, poiché hai descritto un concetto di algoritmi invece di un modello di processo del software."
+        ],
+        "overall": "Hai dato una definizione corretta di un concetto algoritmico, ma purtroppo non hai risposto alla domanda sul modello a cascata. Non preoccuparti, capita durante la tensione dell'esame! Facciamo un respiro profondo e riproviamo: concentriamoci sul ciclo di vita del software."
+      },
+      "timestamp": "2026-04-17T10:52:22.633161+00:00"
+    },
+    {
+      "turn_number": 4,
+      "role": "professor",
+      "text": "Nessun problema, capita di fare confusione! Torniamo al punto: potresti spiegarmi cos'è il modello a cascata (Waterfall) nell'ingegneria del software e perché, nello sviluppo moderno, si preferiscono spesso approcci di tipo agile?",
+      "timestamp": "2026-04-17T10:52:22.633186+00:00"
+    }
+  ]
+}

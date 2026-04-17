@@ -11,6 +11,7 @@ class StartExamRequest(BaseModel):
 class StartExamResponse(BaseModel):
     session_id: str
     question_text: str
+    audio_url: str = ""
 
 
 class ScoreBlock(BaseModel):
@@ -31,9 +32,11 @@ class AnswerAudioResponse(BaseModel):
     scores: ScoreBlock
     feedback: FeedbackBlock
     next_question_text: str
+    audio_url: str = ""
 
 
 class EndExamResponse(BaseModel):
     session_id: str
     overall_preparation: float
     summary: str
+    audio_url: str = ""

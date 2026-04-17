@@ -6,6 +6,7 @@ from app.config import settings
 from app.services.gemini_service import gemini_service
 from app.services.stt_service import stt_service
 from app.services.storage_service import storage_service
+from app.services.tts_service import tts_service
 
 PROMPTS_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "prompts")
 
@@ -56,7 +57,10 @@ def start_exam(user_id: str, subject: str, language: str) -> dict:
 
     storage_service.save_session(session_id, session_data)
 
-    return {"session_id": session_id, "question_text": question_text}
+    audio_filename = f"{session_id}_start.mp3"
+    audio_url = tts_service.generate_audio(question_text, audio_filename)
+
+    return {"session_id": session_id, "question_text": question_text, "audio_url": audio_url}
 
 
 def answer_audio(
@@ -142,12 +146,16 @@ def answer_audio(
 
     storage_service.save_session(session_id, session)
 
+    audio_filename = f"{session_id}_{next_turn_number + 2}.mp3"
+    audio_url = tts_service.generate_audio(next_question_text, audio_filename)
+
     return {
         "session_id": session_id,
         "transcript": transcript,
         "scores": scores,
         "feedback": feedback,
         "next_question_text": next_question_text,
+        "audio_url": audio_url,
     }
 
 
@@ -206,8 +214,12 @@ def end_exam(user_id: str, session_id: str) -> dict:
     session["status"] = "completed"
     storage_service.save_session(session_id, session)
 
+    audio_filename = f"{session_id}_end.mp3"
+    audio_url = tts_service.generate_audio(summary, audio_filename)
+
     return {
         "session_id": session_id,
         "overall_preparation": overall_preparation,
         "summary": summary,
+        "audio_url": audio_url,
     }

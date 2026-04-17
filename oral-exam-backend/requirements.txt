@@ -4,4 +4,4 @@ python-multipart
 pydantic-settings
 google-genai
 faster-whisper
-python-dotenv
+python-dotenvedge-tts

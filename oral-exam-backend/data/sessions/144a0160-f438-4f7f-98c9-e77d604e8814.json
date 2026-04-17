@@ -1,0 +1,50 @@
+{
+  "session_id": "144a0160-f438-4f7f-98c9-e77d604e8814",
+  "user_id": "test_user_01",
+  "subject": "Ingegneria del software",
+  "language": "it-IT",
+  "created_at": "2026-04-17T10:45:51.812323+00:00",
+  "status": "completed",
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "professor",
+      "text": "Ciao! Sono il tuo tutor virtuale per questa simulazione d'esame di Ingegneria del Software. Sono qui per aiutarti a ripassare e a prendere confidenza con le dinamiche dell'orale, quindi non preoccuparti: rispondi pure con calma e con i tuoi tempi.\n\nIniziamo subito. Vorrei partire dalle basi della disciplina: potresti spiegarmi brevemente che cos'è il ciclo di vita del software e qual è, secondo te, l'importanza di adottare un modello di processo ben definito nello sviluppo di un sistema complesso?",
+      "timestamp": "2026-04-17T10:45:51.812357+00:00"
+    },
+    {
+      "turn_number": 2,
+      "role": "student",
+      "text": "Un algoritmo gridi è un paradigma algoritmico che costruisce una soluzione pezzo per pezzo, scegliendo in ogni momento il pezzo che offre il beneficio più ovvio e immediato.",
+      "timestamp": "2026-04-17T10:45:58.678315+00:00",
+      "audio_file": "data/audio_in/144a0160-f438-4f7f-98c9-e77d604e8814_test.aiff"
+    },
+    {
+      "turn_number": 3,
+      "role": "evaluation",
+      "scores": {
+        "clarity": 8,
+        "completeness": 0,
+        "confidence": 7
+      },
+      "feedback": {
+        "strengths": [
+          "Hai fornito una definizione chiara e precisa di cosa sia un algoritmo greedy.",
+          "Il linguaggio utilizzato è corretto e ben strutturato."
+        ],
+        "weaknesses": [
+          "La risposta è completamente fuori tema rispetto alla domanda posta sull'ingegneria del software.",
+          "È necessario prestare maggiore attenzione alla traccia della domanda prima di rispondere."
+        ],
+        "overall": "Hai dato una definizione tecnicamente corretta di un concetto algoritmico, ma purtroppo non hai risposto alla mia domanda sul ciclo di vita del software. Non preoccuparti, capita durante le simulazioni! Facciamo un respiro profondo e riproviamo: concentriamoci sul processo di sviluppo software."
+      },
+      "timestamp": "2026-04-17T10:46:00.645475+00:00"
+    },
+    {
+      "turn_number": 4,
+      "role": "professor",
+      "text": "Nessun problema, capita di confondersi! Torniamo al punto di partenza: potresti spiegarmi cos'è il ciclo di vita del software (Software Development Life Cycle) e perché, in un progetto complesso, è fondamentale seguire un modello di processo strutturato invece di procedere in modo improvvisato?",
+      "timestamp": "2026-04-17T10:46:00.645483+00:00"
+    }
+  ]
+}
