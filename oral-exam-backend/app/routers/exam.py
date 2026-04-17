@@ -12,21 +12,11 @@ router = APIRouter()
 
 @router.post("/start", response_model=StartExamResponse)
 async def start_exam(payload: StartExamRequest):
-    # Validate subject
-    if payload.subject not in ALLOWED_SUBJECTS:
-        raise HTTPException(
-            status_code=422,
-            detail=(
-                f"Materia non valida: '{payload.subject}'. "
-                f"Le materie supportate sono: {', '.join(ALLOWED_SUBJECTS)}"
-            ),
-        )
-
     try:
         result = exam_service.start_exam(
             user_id=payload.user_id,
-            subject=payload.subject,
-            language=payload.language,
+            subject=settings.default_subject,
+            language=settings.default_language,
         )
         return result
     except Exception as exc:
@@ -37,8 +27,6 @@ async def start_exam(payload: StartExamRequest):
 async def answer_audio(
     user_id: str = Form(...),
     session_id: str = Form(...),
-    subject: str = Form(...),
-    language: str = Form(...),
     audio: UploadFile = File(...),
 ):
     # Validate session exists
@@ -59,8 +47,8 @@ async def answer_audio(
         result = exam_service.answer_audio(
             user_id=user_id,
             session_id=session_id,
-            subject=subject,
-            language=language,
+            subject=settings.default_subject,
+            language=settings.default_language,
             audio_path=audio_path,
         )
         return result

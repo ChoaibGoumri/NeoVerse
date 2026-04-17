@@ -21,7 +21,7 @@ The goal is **not** to simulate an exam or assess the student, but to provide **
 The feature we added to the existing **Piazza del Sapere UNISA** project introduces two new interactive spaces aimed at improving the student experience:
 
 ### 1. Tutoring Room
-A dedicated space where students can engage with an **AI tutor** acting as an academic guide.  
+A dedicated space where students can engage with an **AI tutor powered by Google Gemini**, acting as an academic guide.  
 Rather than evaluating performance, the tutor supports the student by:
 
 - explaining concepts clearly and progressively;
@@ -170,6 +170,17 @@ The expected benefits of this solution include:
 - better balance between learning and well-being;
 - increased motivation and engagement;
 - a simpler, more reassuring, and more accessible user experience.
+
+---
+
+## Technology Stack
+
+The Tutoring Room feature is powered by a modern AI-driven architecture:
+
+- **AI Brain**: **Google Gemini API**, used for natural language understanding, context-aware tutoring, and non-judgmental guidance.
+- **Speech-to-Text**: **Faster-Whisper (Local)**, ensuring high-speed transcription of the student's voice directly on the backend.
+- **Text-to-Speech**: **Edge-TTS**, providing high-quality, natural-sounding AI voices for the tutor's responses.
+- **Backend Framework**: **FastAPI**, managing the real-time communication between the VR environment and the AI services.
 
 ---
 

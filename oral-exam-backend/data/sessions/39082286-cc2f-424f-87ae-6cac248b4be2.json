@@ -1,0 +1,50 @@
+{
+  "session_id": "39082286-cc2f-424f-87ae-6cac248b4be2",
+  "user_id": "test_user_01",
+  "subject": "Ingegneria del software",
+  "language": "en-US",
+  "created_at": "2026-04-17T11:53:01.832913+00:00",
+  "status": "completed",
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "professor",
+      "text": "Hello! I am your virtual tutor for this Software Engineering exam simulation. I’m here to help you practice and feel more confident for your upcoming oral exam. Please take your time, relax, and answer as best as you can.\n\nLet’s begin. To start things off, could you explain the fundamental differences between the Waterfall model and Agile methodologies in the context of software development?",
+      "timestamp": "2026-04-17T11:53:01.832936+00:00"
+    },
+    {
+      "turn_number": 2,
+      "role": "student",
+      "text": "A greedy algorithm is a paradigm algorithm that builds a solution piece by piece, choosing at any time the piece that offers the most obvious and immediate benefit.",
+      "timestamp": "2026-04-17T11:53:07.529615+00:00",
+      "audio_file": "data/audio_in/39082286-cc2f-424f-87ae-6cac248b4be2_test.aiff"
+    },
+    {
+      "turn_number": 3,
+      "role": "evaluation",
+      "scores": {
+        "clarity": 8,
+        "completeness": 0,
+        "confidence": 7
+      },
+      "feedback": {
+        "strengths": [
+          "The definition provided for a greedy algorithm is accurate and well-articulated.",
+          "You spoke with a clear and steady tone, demonstrating good communication skills."
+        ],
+        "weaknesses": [
+          "The answer is completely off-topic; you described an algorithmic paradigm instead of the software development life cycle models requested.",
+          "It is important to carefully listen to the specific question asked before formulating your response."
+        ],
+        "overall": "You have a good grasp of algorithmic concepts, but you seem to have misread the question regarding Software Engineering methodologies. Don't worry, this is a common mistake during practice—take a deep breath and let's refocus on the Software Engineering syllabus."
+      },
+      "timestamp": "2026-04-17T11:53:12.487857+00:00"
+    },
+    {
+      "turn_number": 4,
+      "role": "professor",
+      "text": "It seems we had a slight mix-up! Let's try again: could you please explain the fundamental differences between the Waterfall model and Agile methodologies in the context of software development?",
+      "timestamp": "2026-04-17T11:53:12.487888+00:00"
+    }
+  ]
+}
