@@ -27,13 +27,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5635487261345871041}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.07, y: 0.1, z: 0.01}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6404071863580018647}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &6361221563984735749
 MeshFilter:
@@ -93,9 +93,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5635487261345871041}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 1
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1.6}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &5635487261345871040
@@ -110,14 +118,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05fbe01c6abc2914283ccb45db7b2ba7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchMaterial: {fileID: 2100000, guid: ef7fbc3166213774896de148cb700bc2, type: 2}
-  restoreMaterialAtUntouch: 0
-  isToggleButton: 1
-  audioSource: {fileID: 0}
+  buttonStatus: 0
   timeBetweenTouchTrigger: 0.3
   timeBetweenUnTouchTrigger: 0.3
-  buttonStatus: 0
-  Type: OnTouchButton
+  isToggleButton: 1
+  touchMaterial: {fileID: 2100000, guid: ef7fbc3166213774896de148cb700bc2, type: 2}
+  restoreMaterialAtUntouch: 0
+  feedback: {fileID: 0}
+  audioFeedbackType: OnTouchButton
   playSoundWhenTouched: 1
   playHapticWhenTouched: 1
   onTouch:
@@ -126,6 +134,7 @@ MonoBehaviour:
   onUnTouch:
     m_PersistentCalls:
       m_Calls: []
+  analyseTouchersContactsImmediatly: 1
 --- !u!1 &6404071863580018646
 GameObject:
   m_ObjectHideFlags: 0
@@ -149,6 +158,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6404071863580018646}
+  serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.8069603, z: -0, w: 0.59060574}
   m_LocalPosition: {x: 105.7746, y: 1.4838, z: 98.2803}
   m_LocalScale: {x: 1.0000001, y: 1, z: 1.0000001}
@@ -157,7 +167,6 @@ Transform:
   - {fileID: 4125611964013507744}
   - {fileID: 287569549341662273}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 107.6, z: 0}
 --- !u!1 &8987045317200385773
 GameObject:
@@ -190,7 +199,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6404071863580018647}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
